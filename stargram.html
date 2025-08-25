@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>튜브토피아 별스타그램</title>
+    <link rel="stylesheet" href="./css/all.min.css">
+    <style>
+        *,
+        *::before,
+        *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /* clearfix */
+        .clearfix::before,
+        .clearfix::after {
+            display: block;
+            content: '';
+            clear: both;
+        }
+
+        #header {}
+
+        #banner {}
+
+        #contents {
+            margin-bottom: 300px;
+        }
+
+        .container {
+            width: 1280px;
+            height: inherit;
+            margin: 0 auto;
+        }
+
+        .header {
+            border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+        }
+
+        .header .logo {
+            margin-top: 50px;
+        }
+
+        .header div {
+            float: right;
+            margin-bottom: 10px;
+        }
+
+        .header div div {
+            float: left;
+            width: 65px;
+            height: 25px;
+            border-radius: 7px;
+            text-align: center;
+            line-height: 25px;
+            cursor: pointer;
+        }
+
+        .header .button1 {
+            margin-right: 20px;
+            color: white;
+            background-color: #006fba;
+        }
+
+        .header .button2 {
+            color: #006fba;
+            background-color: white;
+        }
+
+        .banner {
+            margin-top: 100px;
+            position: relative;
+        }
+
+        .contents {
+            background: linear-gradient(45deg, #ffcbf8d3, #7de5ffc7);
+            width: 580px;
+            height: 700px;
+            position: absolute;
+            top: 255px;
+            right: 312px;
+        }
+
+        .contents ul {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .contents ul li {
+            padding: 50px;
+            position: relative;
+            text-align: center;
+        }
+
+        .contents ul li img {
+            margin-right: 10px;
+            position: absolute;
+            top: 45px;
+            left: 45px;
+        }
+
+        .contents ul li a {
+            color: #333;
+            margin-right: 10px;
+        }
+
+        .contents ul li article {
+            text-align: center;
+            line-height: 500px;
+            font-size: 25px;
+        }
+        .contents ul div.talk{
+            position: absolute;
+            bottom: 50px;
+            left: 50px;
+            font-size: 20px;
+            width: 500px;
+            border-top: 1px solid rgba(0, 0, 0, 0.2);
+            padding-top: 20px;
+        }
+        .contents ul .fa-heart{
+            margin-right: 10px;
+        }
+        .contents ul .fa-comment{
+            margin-right: 10px;
+        }
+        .contents ul .fa-bookmark{
+            font-size: 20px;
+            position: absolute;
+            bottom: 50px;
+            right: 50px;
+
+        } 
+        .contents ul .like li{
+            width: 200px;
+            position: absolute;
+            top: 230px;
+            left: -460px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <header id="header">
+        <div class="container">
+            <header class="header clearfix">
+                <h1 class="logo"><img src="./stargram_img/logo.png" alt="로고 이미지"></h1>
+                <div>
+                    <div class="button1">로그인</div>
+                    <div class="button2">가입하기</div>
+                </div>
+            </header>
+        </div>
+    </header>
+    <section id="banner">
+        <div class="container">
+            <section class="banner">
+                <img src="./stargram_img/banner1.png" alt="">
+            </section>
+        </div>
+    </section>
+    <section id="contents">
+        <div class="container">
+            <section class="contents">
+                <ul>
+                    <li>
+                        <img src="./stargram_img/cont_tag.png" alt="태그 이미지">
+                        <a href="#">tube_topia</a>
+                        <a href="#">팔로우</a>
+                        <i class="fa-solid fa-ellipsis"></i>
+                        <article>아직 댓글이 없습니다.</article>
+                    </li>
+                    <div class="talk">
+                        <i class="fa-regular fa-heart"></i>
+                        <i class="fa-regular fa-comment"></i>
+                        <i class="fa-regular fa-paper-plane"></i>
+                    </div>
+                    <i class="fa-regular fa-bookmark"></i>
+                    <ul class="like">
+                        <li>좋아요9999개</li>
+                    </ul>
+                </ul>
+            </section>
+        </div>
+    </section>
+</body>
+
+</html>

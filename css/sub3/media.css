@@ -1,0 +1,783 @@
+@charset "utf-8";
+
+/* pc버전 */
+@media(max-width:1290px){
+    .container{
+        width: 100%;
+    }
+    /* c_nav */
+    .c_nav{
+        padding: 30px 40px 0 0;
+        margin: 0 auto 30px;
+        width: 100%;
+        max-width: inherit;
+    }
+    /* content1 */
+    .content1 .Information article{
+        height: auto;
+    }
+    .content1 .Information .guide{
+        display: none;
+    }
+    .content1 .Information .date{
+        width: 70%;
+    }
+    .content1 .Information .time{
+        width: 30%;
+        padding: 50px 50px;
+    }
+    .content1 .Information .charge{
+        width: 100%;
+    }
+    .content1 .Information .charge > ul > li{
+        display: block;
+        padding-left: 100px;
+        text-align: center;
+    }
+    .content1 .Information .charge > ul > li > span{
+        padding: 0;
+        margin: 0;
+    }
+    .content1 .Information .charge > ul > li > em{
+        display: inline;
+    }
+    .content1 .caution{
+        height: auto;
+        padding: 10px;
+    }
+    /* content2 */
+    .content2{
+        height: auto;
+    }
+    .content2 > article{
+        width: 19.5%;
+        height: 250px;
+        margin-bottom: 10px;
+    }
+    .content2 > article .back > ul > li:last-child{
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .content2 > article .back > ul > li > span:first-child{
+        padding-top: 10px;
+    }
+    .content2 > article .back > ul > li{
+        white-space: wrap;
+    }
+    /* content3 */
+    .content3 > article{
+        width: 24.5%;
+    }
+    .content3 > article > .popup{
+        width: 100%;
+        left: 0px;
+        top: auto;
+        bottom: -155px;
+    }
+    .content3 > article:nth-of-type(1) > .popup, .content3 > article:nth-of-type(2) > .popup{
+        top: -155px;
+    }
+    .content3 > article > .popup > i{
+        font-size: 5vw;
+    }
+    .content3 > article > .popup > p > em{
+        white-space: nowrap;
+    }
+    .content3 > article > .popup > p > span{
+        white-space: nowrap;
+    }
+    /* content4 */
+    #content4{
+        padding: 150px 0px;
+    }
+    .content4 > article{
+        width: 32.5%;
+        height: 400px;
+    }
+}
+
+@media(max-width:1220px){
+    /* header */
+    #header{
+        height: 100px;
+    }
+    .header{
+        height: 100px;
+    }
+    .header >.logo >a{
+        display: block;
+        background-image: url(../../main_img/logo_1.png);
+        width: 200px;
+        height: 100px;
+    }
+    .header >.logo >a >img{
+        display: none;
+    }
+    .header .nav{
+        margin-top: 30px;
+    }
+    .header .nav >ul >li >a{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    .header .nav >ul >li >.submenu >li >a{
+        width: 150px;
+        height: 65px;
+        line-height: 65px;
+        font-size: 17px;
+    }
+    /* banner */
+    #banner{
+        height: 790px;
+    }
+    /* content3 */
+    .content3 > article > .popup > p > em{
+        font-size: 10px;
+    }
+    /* content4 */
+    .content4 > article .desc{
+        padding: 80px 10px;
+        width: 80%;
+    }
+}
+
+@media(max-width:1100px){
+    /* content1 */
+    .content1 .Information .charge > ul > li{
+        padding-left: 70px;
+    }
+    .content1 .Information .charge > ul > li > b{
+        width: 70px;
+        font-size: 20px;
+    }
+    /* content2 */
+    .content2 > article{
+        width: 33%;
+        height: 220px;
+    }
+    .content2 > article:last-child{
+        width: 100%;
+        height: 200px;
+    }
+    .content2 > article > .a10 > ul > li > span{
+        display: inline-block;
+        font-size: 18px;
+    }
+    /* content3 */
+    .content3 > article > .popup{
+        padding: 15px;
+    }
+    /* content4 */
+    .content4 > article .desc{
+        padding: 80px 5px;
+        width: 85%;
+    }
+}
+
+/* 노트북 */
+@media(max-width:1024px){
+    /* banner */
+    .banner > h2{
+        font-size: 130px;
+    }
+    .banner > h2 > span{
+        font-size: 57px;
+    }
+    /* content1 */
+    .content1 .Information .date{
+        width: 100%;
+        border-right: 0;
+    }
+    .content1 .Information .time{
+        width: 100%;
+        border-top: 2px solid #00b4d8;
+        padding: 10px 17px;
+    }
+    .content1 .Information .time > ul > li{
+        line-height: 1.6;
+    }
+    .content1 .Information .time > ul > li:first-child{
+        margin: 10px 0;
+    }
+    .content1 .Information .time > ul > li > span{
+        display: inline-block;
+        font-weight: normal;
+    }
+    .content1 .Information .time > ul > li > em{
+        display: inline-block;
+        font-weight: normal;
+    }
+    .content1 .Information .charge{
+        padding: 10px 17px;
+        height: auto;
+    }
+    .content1 .Information .charge > h4{
+        width: auto;
+        font-size: 24px;
+        color: #006fba;
+        font-weight: 900;
+        margin-bottom: 10px;
+    }
+    .content1 .Information .charge > ul{
+        padding: 0;
+    }
+    .content1 .Information .charge > ul > li{
+        height: auto;
+        line-height: 50px;
+    }
+    .content1 .Information .charge > ul > li > b{
+        top: 50%;
+        transform: translateY(-50%);
+        height: inherit;
+        line-height: inherit;
+        height: 100%;
+        line-height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .content1 .Information .charge > ul > li > span{
+        font-size: 16px;
+    }
+    .content1 .caution > ul > li{
+        font-size: 14px;
+    }
+    /* content3 */
+    .content3 > article > .popup{
+        padding: 10px;
+    }
+    /* content4 */
+    .content4 > article .desc > strong{
+        font-size: 32px;
+    }
+    .content4 > article .desc > p{
+        font-size: 16px;
+    }
+    .content4 > article .desc > p > b:first-child{
+        font-size: 18px;
+    }
+}
+
+/* 노트북 */
+@media(max-width:960px){
+    /* banner */
+    .banner > h2{
+        font-size: 120px;
+    }
+    .banner > h2 > span{
+        font-size: 56px;
+    }
+
+    /* header */
+    #header .row{
+        padding: 0 20px 0 0;
+
+    }
+    .header .nav{
+        margin-top: 0px;
+        width: 200px;
+        height: 790px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        top: 100px;
+        right: -300px;
+        transition: all 0.3s;
+        z-index: 1000;
+    }
+    .header .nav.open{
+        right: -20px;
+    }
+    .header .nav >ul >li >a{
+        width: 200px;
+        height: auto;
+        padding: 10px 20px;
+        font-size: 20px;
+        color: #333;
+    }
+    .header .nav >ul >li >.submenu{
+        height: auto;
+        border-radius: 0;
+        box-shadow: none;
+        position: static;
+        width: 100%;
+    }
+    .header .nav >ul >li >.submenu >li >a{
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .header #barMenu {
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 25px;
+        right: 20px;
+        top: 40px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+
+    .header #barMenu>.bar {
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        position: relative;
+        border-radius: 50px;
+    }
+
+    .header #barMenu>.bar::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        border-radius: 50px;
+    }
+
+    .header #barMenu>.bar::before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        border-radius: 50px;
+    }
+    /* c_nav */
+    .c_nav > ul > li > a{
+        font-size: 30px;
+    }
+    /* content1 */
+    .content1 .Information .charge > ul > li{
+        padding: 0 30px 0 100px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content1 .Information .charge > ul > li > span{
+        text-align: left;
+    }
+    .content1 .Information .charge > ul > li > em{
+        display: none;
+    }
+    /* content3 */
+    #content3 .row{
+        padding: 0 10px;
+    }
+    .content3 > article{
+        width: 49%;
+        flex-direction: row;
+        height: 300px;
+        margin-bottom: 10px;
+    }
+    .content3 > article > .pic{
+        padding: 0 25px 0 0;
+        border-bottom: 0;
+        border-right: 2px solid #00b4d8;
+        width: 50%;
+    }
+    .content3 > article > .pic > figure{
+        width: 100%;
+        height: auto;
+    }
+    .content3 > article > .popup > p{
+        padding-left: 20px;
+        flex-direction: row;
+        flex-wrap: wrap;
+        font-size: 12px;
+    }
+    .content3 > article > .popup > p > em{
+        font-size: 12px;
+        width: 100%;
+    }
+    .content3 > article > .popup > p > span{
+        width: 50%;
+        padding: 3px 0;
+    }
+    .content3 > article > .pic > figure > figcaption{
+        height: 40%;
+        line-height: normal;
+        font-size: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    /* content4 */
+    .content4 > article .desc{
+        padding: 80px 10px;
+        width: 100%;
+    }
+    /* footer1 */
+    .footer1 .f_logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer1 div article {
+        width: 100%;
+    }
+
+    .footer1 div .f_menu ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer1 div .f_menu ul li {
+        float: none;
+        text-align: center;
+    }
+    .footer1 div .f_menu ul.f_copy li {
+        margin-right: 0;
+    }
+
+    .footer1 div .f_sns {
+        margin: 60px auto 0;
+        display: flex;
+        justify-content: space-between;
+        width: 190px;
+    }
+
+    .footer1 div .f_sns a {
+        float: none;
+    }
+
+    .footer1 div .f_sns a img {
+        margin-right: 0px;
+    }
+}
+
+@media(max-width:900px){
+    /* content3 */
+    .content3 > article{
+        padding: 25px 12px;
+    }
+    /* content4 */
+    .content4 > article .desc > p{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:840px){
+    /* banner */
+    .banner h2{
+        font-size: 11vw;
+    }
+    .banner h2 span{
+        font-size: 5vw;
+    }
+}
+
+/* 태블릿 */
+@media(max-width:768px){
+    /* c_nav */
+    .c_nav > ul > li{
+        width: 50%;
+    }
+    .c_nav > ul > li > a{
+        line-height: 35px;
+        font-size: 28px;
+        font-weight: 600;
+    }
+    /* content1 */
+    .content1 .Information .charge > ul > li{
+        display: block;
+        line-height: 1.6;
+    }
+    .content1 .Information .charge > ul > li > em{
+        display: inline;
+    }
+    /* content2 */
+    .content2 > article{
+        height: 270px;
+    }
+    .content2 > article .front{
+        opacity: 0;
+    }
+    .content2 > article .back{
+        transform: rotateY(0deg);
+    }
+    .content2 > article:hover .back{
+        transform: rotateY(0deg);
+    }
+    .content2 > article .back > ul > li > span{
+        display: inline;
+    }
+    .content2 > article .back > ul > li:nth-of-type(2){
+        padding-bottom: 5px;
+    }
+    /* content3 */
+    #content3 .row{
+        padding: 0 20px;
+    }
+    .content3 > article{
+        width: 100%;
+        height: auto;
+    }
+    .content3 > article > .pic{
+        width: 40%;
+    }
+    .content3 > article > p{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .content3 > article > p > span{
+        width: 32%;
+        padding: 5px 0;
+    }
+    .content3 > article > .popup{
+        width: 70%;
+        left: auto;
+        right: 2%;
+        top: 75%;
+        bottom: auto;
+    }
+    .content3 > article:nth-of-type(1) > .popup, .content3 > article:nth-of-type(2) > .popup{
+        top: 75%;
+    }
+    .content3 > article > .pic > figure > figcaption{
+        font-size: 19px;
+    }
+    /* content4 */
+    .content4 > article{
+        height: 350px;
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .content4 > article .filter{
+        opacity: 0;
+    }
+    .content4 > article .desc{
+        width: 75%;
+        padding: 80px 20px;
+        left: 0;
+    }
+    .content4 > article .desc > strong{
+        font-size: 36px;
+    }
+    .content4 > article .desc > p{
+        font-size: 18px;
+    }
+    .content4 > article .desc > p > b:first-child{
+        font-size: 20px;
+    }
+}
+
+@media(max-width:750px) {
+
+    /* footer1 */
+    .footer1 div .f_menu ul.f_copy li {
+        text-align: center;
+    }
+
+    .footer1 div .f_menu ul.f_copy li span {
+        display: block;
+    }
+}
+
+@media(max-width:700px){
+    /* content3 */
+    .content3 > article > .pic > figure > figcaption{
+        font-size: 18px;
+    }
+}
+
+@media(max-width:640px) {
+    /* footer1 */
+    .footer1 div .f_menu ul.f_menuUl {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .footer1 div .f_menu ul.f_menuUl li{
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+    .footer1 div .f_menu ul li::after {
+        width: 0;
+    }
+}
+
+/* 핸드폰 */
+@media(max-width:600px){
+    /* c_nav */
+     .c_nav > ul > li > a{
+        font-size: 24px;
+    }
+    /* content1 */
+    .content1 .Information .charge > ul > li{
+        padding: 0 20px 0 90px;
+    }
+    /* content2 */
+    .content2 > article .back > ul > li:nth-of-type(2){
+        font-size: 16px;
+    }
+    /* content3 */
+    .content3 > article{
+        flex-direction: column;
+    }
+    .content3 > article > .pic{
+        padding-right: 0;
+        padding-bottom: 25px;
+        border-right: 0;
+    }
+    .content3 > article > .pic > figure > figcaption {
+        font-size: 20px;
+    }
+    .content3 > article > p > span{
+        width: 49%;
+    }
+    .content3 > article > .popup{
+        top: -10%;
+        right: -10px;
+        height: auto;
+        padding: 15px;
+    }
+    .content3 > article:nth-of-type(1) > .popup, .content3 > article:nth-of-type(2) > .popup{
+        top: -10%;
+    }
+    .content3 > article > .popup > i{
+        font-size: 7vw;
+    }
+    .content3 > article > .popup > p{
+        text-align: center;
+    }
+    .content3 > article > .popup > p > span{
+        width: 100%;
+    }
+    /* content4 */
+    .content4 > article .desc > strong{
+        font-size: 32px;
+    }
+    .content4 > article .desc > p{
+        font-size: 16px;
+    }
+    .content4 > article .desc > p > b:first-child{
+        font-size: 18px;
+    }
+}
+
+@media(max-width:500px){
+     /* content2 */
+    .content2 > article{
+        width: 49%;
+        height: 250px;
+    }
+    .content2 > article:last-child{
+        width: 49%;
+        height: 250px;
+    }
+    .content2 > article > .a10 > ul > li > span{
+        font-size: 14px;
+    }
+}
+
+
+/* 핸드폰 */
+@media(max-width:480px){
+    /* c_nav */
+    .c_nav > ul > li > a{
+        font-size: 22px;
+    }
+    /* content1 */
+    .content1 .Information .charge > ul > li{
+        padding: 0 10px 0 80px;
+    }
+    .content1 .Information .charge > ul > li > span {
+        font-size: 15px;
+    }
+    /* content2 */
+    .content2 > article{
+        height: 300px;
+    }
+    .content2 > article:last-child{
+        height: 300px;
+    }
+    .content2 > article .back > ul > li:nth-of-type(1){
+        margin-bottom: 18px;
+    }
+    /* content3 */
+    .content3 > article > .popup{
+        flex-direction: column;
+    }
+    .content3 > article > .popup > i{
+        padding-bottom: 10px;
+    }
+    .content3 > article > .popup > p {
+        padding-left: 0px;
+    }
+    /* footer1 */
+    .footer1 div .f_menu ul li a{
+        font-size: 14px;
+    }
+    .footer1 div .f_menu ul.f_copy li span{
+        font-size: 14px;
+    }
+}
+
+
+@media(max-width:425px) {
+    .footer1 div .f_menu ul.f_copy li span em{
+        display: block;
+    }
+}
+
+@media(max-width:400px){
+    /* content3 */
+    .content3 > article > .pic{
+        width: 50%;
+    }
+    .content3 > article > p > span{
+        width: 100%;
+    }
+    /* content4 */
+    .content4 > article .desc{
+        width: 80%;
+    }
+}
+
+
+@media(max-width:370px){
+    /* content3 */
+    .content3 > article > p > span{
+        padding: 2px 0;
+    }
+    .content3 > article > .popup{
+        width: 75%;
+    }
+    /* content4 */
+    .content4 > article .desc{
+        width: 100%;
+    }
+}
+
+/* 핸드폰 */
+@media(max-width:320px){
+    /* content1 */
+    .content1 .Information .charge > ul > li > span {
+        font-size: 14px;
+    }
+    /* content2 */
+    .content2 > article{
+        width: 100%;
+        height: 200px;
+    }
+    .content2 > article:last-child{
+        width: 100%;
+        height: 200px;
+    }
+    /* content3 */
+    .content3 > article > .pic > figure > figcaption {
+        font-size: 18px;
+    }
+    .content3 > article > .popup{
+        width: 80%;
+    }
+}

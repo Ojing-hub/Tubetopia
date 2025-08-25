@@ -1,0 +1,615 @@
+@charset "utf-8";
+
+/* pc버전 */
+@media(max-width:1290px){
+    .container{
+        width: 100%;
+    }
+    #banner{
+        background-position: center;
+    }
+    /* cont1 */
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul{
+        justify-content: center;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li >p{
+        width: 550px;
+        /* height: 350px; */
+        height: auto;
+        font-size: 23px;
+        padding: 20px 30px;
+        line-height: 36px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li >img{
+        width: 450px;
+        height: 550px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(2n-1){
+        margin-right: 8%;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(1),
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(4){
+        margin-top: 100px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(1),
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(2){
+        margin-bottom: 70px;
+    }
+}
+
+@media(max-width:1220px){
+    /* header */
+    #header{
+        height: 100px;
+    }
+    .header{
+        height: 100px;
+    }
+    .header >.logo >a{
+        display: block;
+        background-image: url(../../main_img/logo_1.png);
+        width: 200px;
+        height: 100px;
+    }
+    .header >.logo >a >img{
+        display: none;
+    }
+    .header .nav{
+        margin-top: 30px;
+    }
+    .header .nav >ul >li >a{
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 20px;
+    }
+    .header .nav >ul >li >.submenu >li >a{
+        width: 150px;
+        height: 65px;
+        line-height: 65px;
+        font-size: 17px;
+    }
+    /* banner */
+    #banner{
+        height: 790px;
+    }
+}
+
+@media(max-width:1150px){
+    /* cont1 */
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li >p{
+        width: 500px;
+        font-size: 18px;
+        line-height: 30px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li >img{
+        width: 400px;
+        height: 500px;
+    }
+
+    /* cont2 */
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li >.cont2_box >figcaption{
+        height: auto;
+        padding: 30px 40px;
+    }
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li >.cont2_box >figcaption >h3{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li >.cont2_box >figcaption >span{
+        font-size: 25px;
+    }
+}
+
+@media(max-width:1050px){
+    /* cont1 */
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li >p{
+        width: 450px;
+        font-size: 18px;
+        padding-left: 25px;
+        line-height: 25px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li >img{
+        width: 350px;
+        height: 450px;
+    }
+}
+
+/* 노트북 */
+@media(max-width:1024px){
+    /* tab_btn */
+    .content >.tab_menu >.tab_btn >ul >li{
+        width: 300px;
+        height: 70px;
+    }
+    .content >.tab_menu >.tab_btn >ul >li >a{
+        font-size: 30px;
+    }
+    /* cont1 */
+    .content >.tab_menu >.tab_cont >.cont1{
+        top: 180px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li{
+        width: 250px;
+        height: 250px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li >i{
+        font-size: 100px;
+        top: 30%;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li >p{
+        top: 70%;
+        font-size: 19px;
+    }
+}
+
+/* 노트북 */
+@media(max-width:960px){
+    /* header */
+    #header .row{
+        padding: 0 20px 0 0;
+    }
+    .header .nav{
+        margin-top: 0px;
+        width: 200px;
+        height: 790px;
+        border-radius: 20px;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        top: 100px;
+        right: -300px;
+        transition: all 0.3s;
+        z-index: 1000;
+    }
+    .header .nav.open{
+        right: -20px;
+    }
+    .header .nav >ul >li >a{
+        width: 200px;
+        height: auto;
+        padding: 10px 20px;
+        font-size: 20px;
+        color: #333;
+    }
+    .header .nav >ul >li >.submenu{
+        height: auto;
+        border-radius: 0;
+        box-shadow: none;
+        position: static;
+        width: 100%;
+    }
+    .header .nav >ul >li >.submenu >li >a{
+        width: 100%;
+        font-size: 15px;
+        text-align: center;
+    }
+    .header #barMenu {
+        display: block;
+        position: absolute;
+        width: 40px;
+        height: 25px;
+        right: 20px;
+        top: 40px;
+        cursor: pointer;
+        z-index: 9999;
+    }
+    .header #barMenu>.bar {
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        position: relative;
+        border-radius: 50px;
+    }
+    .header #barMenu>.bar::after {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        position: absolute;
+        top: 10px;
+        right: 0;
+        border-radius: 50px;
+    }
+    .header #barMenu>.bar::before {
+        content: "";
+        width: 100%;
+        height: 4px;
+        background-color: #fff;
+        position: absolute;
+        top: 20px;
+        right: 0;
+        border-radius: 50px;
+    }
+    /* cont1 */
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li >p{
+        width: 410px;
+        font-size: 15px;
+        padding-left: 25px;
+        line-height: 21px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li >img{
+        width: 310px;
+        height: 410px;
+    }
+    /* cont2 */
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li >.cont2_box >figcaption{
+        padding: 30px 20px;
+    }
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li >.cont2_box >figcaption >h3{
+        font-size: 28px;
+        margin-bottom: 18px;
+    }
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li >.cont2_box >figcaption >span{
+        font-size: 23px;
+    }
+    /* footer1 */
+    .footer1 .f_logo {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer1 div article {
+        width: 100%;
+    }
+
+    .footer1 div .f_menu ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .footer1 div .f_menu ul li {
+        float: none;
+        text-align: center;
+    }
+    .footer1 div .f_menu ul.f_copy li {
+        margin-right: 0;
+    }
+
+    .footer1 div .f_sns {
+        margin: 60px auto 0;
+        display: flex;
+        justify-content: space-between;
+        width: 190px;
+    }
+
+    .footer1 div .f_sns a {
+        float: none;
+    }
+
+    .footer1 div .f_sns a img {
+        margin-right: 0px;
+    }
+}
+
+@media(max-width:840px){
+    /* banner */
+    .banner .banner_box .p1{
+        font-size: 7vw;
+    }
+    .banner .banner_box .p2{
+        font-size: 11vw;
+    }
+    .banner .banner_box span{
+        font-size: 5vw;
+    }
+    /* cont1 */
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li >p{
+        width: 380px;
+        padding: 15px 25px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li >img{
+        width: 280px;
+        height: 380px;
+    }
+    /* cont2 */
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li >.cont2_box >figcaption{
+        padding: 30px 20px;
+    }
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li >.cont2_box >figcaption >h3{
+        font-size: 25px;
+        margin-bottom: 17px;
+    }
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li >.cont2_box >figcaption >span{
+        font-size: 20px;
+    }
+}
+
+/* 태블릿 */
+@media(max-width:768px){
+    /* tab_btn */
+    .content >.tab_menu >.tab_btn >ul >li{
+        width: 250px;
+        height: 50px;
+    }
+    .content >.tab_menu >.tab_btn >ul >li >a{
+        line-height: 50px;
+        font-size: 25px;
+    }
+    /* cont1 */
+    .content >.tab_menu >.tab_cont >.cont1{
+        top: 150px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li{
+        width: 200px;
+        height: 200px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li >i{
+        font-size: 80px;
+        top: 30%;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li >p{
+        top: 70%;
+        font-size: 15px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info{
+        margin-top: 0px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul{
+        display: flex;
+        justify-content: center;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(2n-1){
+        margin-right: 0;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(1){
+        margin-bottom: 0;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(3){
+        order: 2;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(2){
+        order: 1;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(1),
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(4){
+        margin-top: 0px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(2),
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(3){
+        position: relative;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(2) >figcaption,
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(3) >figcaption{
+        display: block;
+        width: 500px;
+        height: 600px;
+        background-color: rgba(255, 255, 255, 0.6);
+        font-size: 22px;
+        font-family:"Wanted Sans";
+        display: flex;
+        align-items: center;
+        padding-left: 30px;
+        line-height: 36px;
+        position: absolute;
+        top: 0;
+        right: 50%;
+        transform: translateX(50%);
+        color: #000;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li >img{
+        width: 500px;
+        height: 600px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li >p{
+        display: none;
+    }
+    /* cont2 */
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li{
+        flex: 1 1 100%;
+    }
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li:nth-of-type(2n){
+        margin-top: 0px;
+    }
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li >.cont2_box >figcaption{
+        padding: 30px 40px;
+    }
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li >.cont2_box >figcaption >h3{
+        font-size: 30px;
+        margin-bottom: 20px;
+    }
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li >.cont2_box >figcaption >span{
+        font-size: 25px;
+    }
+
+}
+
+@media(max-width:750px) {
+
+    /* footer1 */
+    .footer1 div .f_menu ul.f_copy li {
+        text-align: center;
+    }
+
+    .footer1 div .f_menu ul.f_copy li span {
+        display: block;
+    }
+}
+
+@media(max-width:640px) {
+    /* footer1 */
+    .footer1 div .f_menu ul.f_menuUl {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .footer1 div .f_menu ul.f_menuUl li{
+        width: 100%;
+        text-align: center;
+        margin-right: 0;
+    }
+    .footer1 div .f_menu ul li::after {
+        width: 0;
+    }
+}
+
+/* 핸드폰 */
+@media(max-width:600px){
+    /* tab_btn */
+    .content >.tab_menu >.tab_btn >ul >li{
+        width: 200px;
+    }
+    .content >.tab_menu >.tab_btn >ul >li >a{
+        font-size: 20px;
+    }
+    /* cont1 */
+    .content >.tab_menu >.tab_cont >.cont1{
+        top: 130px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li{
+        width: 150px;
+        height: 150px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li >i{
+        font-size: 50px;
+        top: 30%;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li >p{
+        top: 70%;
+        font-size: 11px;
+    }
+
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li{
+        width: 100%;
+        margin-bottom: 70px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li >img{
+        /* width: 500px; */
+        width: 80%;
+        height: auto;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(2) >figcaption,
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(3) >figcaption{
+        width: 80%;
+        height: 100%;
+        font-size: 20px;
+        padding-left: 25px;
+        line-height: 35px;
+    }
+}
+
+/* 핸드폰 */
+@media(max-width:480px){
+    /* tab_btn */
+    .content >.tab_menu >.tab_btn >ul >li{
+        width: 180px;
+    }
+    .content >.tab_menu >.tab_btn >ul >li >a{
+        font-size: 18px;
+    }
+    /* cont1 */
+    .content >.tab_menu >.tab_cont >.cont1{
+        top: 120px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li{
+        width: 130px;
+        height: 130px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li >i{
+        font-size: 45px;
+        top: 30%;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li >p{
+        top: 70%;
+        font-size: 10px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(2) >figcaption,
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(3) >figcaption{
+        font-size: 15px;
+        padding-left: 23px;
+        line-height: 30px;
+    }
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li >.cont2_box >figcaption >h3{
+        font-size: 30px;
+        text-align: center;
+        font-weight: normal;
+        margin: 10px 0;
+    }
+    .content >.tab_menu >.tab_cont >.cont2 >ul >li >.cont2_box >figcaption >span{
+        display: none;
+    }
+    /* footer1 */
+    .footer1 div .f_menu ul li a{
+        font-size: 14px;
+    }
+    .footer1 div .f_menu ul.f_copy li span{
+        font-size: 14px;
+    }
+}
+
+@media(max-width:425px) {
+    .footer1 div .f_menu ul.f_copy li span em{
+        display: block;
+    }
+}
+
+@media(max-width:420px){
+    /* cont1 */
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(2) >figcaption,
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(3) >figcaption{
+        font-size: 13px;
+        padding-left: 21px;
+        line-height: 28px;
+    }
+}
+
+@media(max-width:380px){
+    /* cont1 */
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li{
+        width: 100px;
+        height: 100px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li >i{
+        font-size: 35px;
+        top: 33%;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li >p{
+        top: 70%;
+        font-size: 7px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(2) >figcaption,
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(3) >figcaption{
+        font-size: 12px;
+        padding-left: 21px;
+        line-height: 20px;
+    }
+}
+
+/* 핸드폰 */
+@media(max-width:320px){
+    /* tab_btn */
+    .content >.tab_menu >.tab_btn >ul >li{
+        width: 100px;
+        height: 40px;
+    }
+    .content >.tab_menu >.tab_btn >ul >li >a{
+        font-size: 13px;
+        line-height: 40px;
+    }
+    /* cont1 */
+    .content >.tab_menu >.tab_cont >.cont1{
+        top: 110px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li{
+        width: 80px;
+        height: 80px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li >i{
+        font-size: 20px;
+        top: 30%;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.icon_info >ul >li >p{
+        top: 65%;
+        font-size: 6px;
+    }
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(2) >figcaption,
+    .content >.tab_menu >.tab_cont >.cont1 >.pic_info >ul >li:nth-of-type(3) >figcaption{
+        font-size: 10px;
+        padding-left: 14px;
+        line-height: 18px;
+    }
+}
